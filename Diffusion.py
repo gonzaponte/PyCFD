@@ -30,7 +30,7 @@ s2    = 1 - 2*s1           # constant 2
 data = np.zeros( (nt,nx) ) # simulated data matrix
 true = np.zeros( (nt,nx) ) # true data matrix
 
-assert s1 < 1.,'Not stable. S1 must be less than 1 and it is '+ str(s1)
+assert s1 <= 0.5,'Not stable. S1 must be less or equal than 0.5 and it is '+ str(s1)
 
 ###### BOUNDARY CONDITIONS
 T0 = 100.                       # input temperature
